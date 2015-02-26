@@ -304,6 +304,9 @@ textarea {
     background: url('../img/layout/banner01.png') center center no-repeat;
     background-size: cover;
 }
+.banner.intern {
+    height: 300px;
+}
 
 .accessinfo {
     height: 88px;
@@ -444,4 +447,33 @@ textarea {
     color: #000;
     line-height: 59px;
     text-align: center;    
+}
+
+.pageTitle {
+    position: relative;
+}
+.pageTitle h2{
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: right;
+}
+
+#contato {
+    padding-top: 30px;
+    padding-bottom: 35px;
+}
+#contato button{
+    display: block;
+    width: 290px;
+    height: 65px;
+    margin: 0 auto;
+    background: #626262;
+    border: 0 none;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 20px;
 }
