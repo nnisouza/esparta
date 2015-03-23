@@ -12,13 +12,14 @@
 
         <link rel="stylesheet" href="assets/css/normalize.min.css">
         <link rel="stylesheet" href="assets/css/main.css">
-        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/js/vendor/owl-carousel/owl.carousel.css">
+        <link rel="stylesheet" href="assets/js/vendor/owl-carousel/owl.theme.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
         <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
-        <div id="fb-root"></div>
+       <div id="fb-root"></div>
         <script>(function(d, s, id) {
           var js, fjs = d.getElementsByTagName(s)[0];
           if (d.getElementById(id)) return;
@@ -47,7 +48,12 @@
                     </div>
                 </div>
             </div>
-            <div class="banner"></div>
+            <div class="pageTitle">
+                <div class="container">
+                    <h2>Gincana</h2>
+                </div>
+            </div>
+            <div class="banner intern"></div>
             <div class="accessinfo">
                 <div class="container clearfix">
                     <div class="half">
@@ -60,47 +66,109 @@
                     </div>
                 </div>
             </div>
-            <div class="content container clearfix">
-                <h3>
-                    Uma organizadora transparente, capacitada e apaixonada pelo que faz
-                </h3>
-                <div class="contentBanner">
-                    <a href="#">
-                        <img src="assets/img/layout/banner-home.jpg" alt="">
-                    </a>
-                </div>
-                <div class="half">
-                    <h4>Próxima Gincana</h4>
-                    <a href="#">
-                        <img src="assets/img/layout/next-gin.jpg" alt="">
-                    </a>
-                </div>
-                <div class="half right">
-                    <h4>Última Gincana</h4>
-                    <a href="#">
-                        <img src="assets/img/layout/last-gin.jpg" alt="">
-                    </a>
-                </div>
-                <div class="clearfix"></div>
-                <h3 class="abTitle">
-                    Sobre Nós
-                </h3>
-                <h4 class="abTitle">
-                    Se talento vem de berço, temos motivos para comemorar.
-                </h4>
-                <div class="clearfix"></div>
-                <div class="half">
-                    <img src="assets/img/layout/abImage.jpg" alt="">
-                </div>
-                <div class="half right">
-                    <p class="abTxt">Somos da cidade de Portão, um município com 30.000 habitantes situado no Vale do Caí. Considerada a Terra Boa pra Morar Portão respira gincana o ano todo.  O evento é referência em todo estado e após participar por mais de 15 anos, resolvemos organizar as gincanas das cidades vizinhas.<br/><br/>
+            <div class="container clearfix gincanaResultados">
+                <ul id="gincanaMenu">
+                    <li>
+                        <a href="gincana-tarefas.html">
+                            Tarefas
+                        </a>
+                    </li>
+                    <li class="separator">|</li>
+                    <li>
+                        <a href="gincana-avisos.html">
+                            Avisos
+                        </a>
+                    </li>
+                    <li class="separator">|</li>
+                    <li>
+                        <a href="gincana-resultados.html">
+                            Resultados Parciais
+                        </a>
+                    </li>
+                    <li class="separator">|</li>
+                    <li>
+                        <a href="gincana-recursos.html">
+                            Recursos
+                        </a>
+                    </li>
+                </ul>
 
-O nosso compromisso é com a qualidade dos nossos serviços.
-Equipe Esparta Organizadora de Gincanas, 2013
-A EQUIPE ESPARTA é formada por dez integrantes com ampla experiência em gincanas. Organizar gincanas é para nós uma atividade que envolve muita responsabilidade. Garantimos todo o nosso empenho, profissionalismo e disponibilidade para procurar satisfazer todas as expectativas. O nosso compromisso é com a qualidade dos nossos serviços e das soluções que propomos.</p>
-                <a href="#" class="gimmeMore">Ver mais...</a>
+                <h3>Equipes participantes</h3>
+
+                <ul class="clientLogo clearfix">
+                    <li>
+                        <img src="assets/img/clientLogo/c01.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/img/clientLogo/c02.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/img/clientLogo/c03.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/img/clientLogo/c04.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/img/clientLogo/c05.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/img/clientLogo/c06.jpg" alt="">
+                    </li>
+                    <li class="last">
+                        <img src="assets/img/clientLogo/c07.jpg" alt="">
+                    </li>
+
+                </ul>
+
+                <h4>Resultado final da Gincana IENH 2014</h4>
+                <div class="grayBox">
+                    <p>Depois de um sábado de muita correria, 35 tarefas, e com direito à caçadas noturnas, chegamos ao fim de mais uma gincana IENH. Foi um prazer enorme para nós da Equipe Esparta poder estar organizando este evento pelo segundo ano consecutivo!</p>
+                    <p>Parabenizamos à todas as equipes pelo espírito de garra e de luta demonstrados até o final, disputando cada ponto e tentando alcançar sempre o melhor resultado.</p>
+                    <p>Em especial, um parabéns à equipe MARAGATOS, campeã da Gincana IENH 2014.</p>
+                </div>
+
+                <h3 class="galleryTitle">
+                    Galeria de fotos
+                </h3>
+
+                <div class="half fromBottom">
+                    <div id="owl-demo" class="owl-carousel owl-theme">
+                        <div class="item"><img src="assets/img/layout/slider.jpg" alt=""></div>
+                        <div class="item"><img src="assets/img/layout/slider.jpg" alt=""></div>
+                        <div class="item"><img src="assets/img/layout/slider.jpg" alt=""></div>
+                        <div class="item"><img src="assets/img/layout/slider.jpg" alt=""></div>
+                    </div>
+                    <a href="javascript:;" id="prev" class="controllers"></a>
+                    <a href="javascript:;" id="next" class="controllers"></a>
+                </div>
+                <div class="half right">
+                    <h4>Classificação Final</h4>
+                    <ol class="scoreList">
+                        <li>Maragatos - 9475 Pontos</li>
+                        <li>Maragatos - 9475 Pontos</li>
+                        <li>Maragatos - 9475 Pontos</li>
+                        <li>Maragatos - 9475 Pontos</li>
+                        <li>Maragatos - 9475 Pontos</li>
+                    </ol>
+                    <h4>Planílhas</h4>
+                    <ul class="planilhasLinks">
+                        <li><a href="">Planílha Final <i class="fa fa-download"></i></a></li>
+                        <li><a href="">Planílha de Resolução <i class="fa fa-download"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <h4>Informações Gerais  |  Tempo Real</h4>
+                <div class="grayBox fromBottom">
+                    <p>FIM DA GINCANA | Equipes: comunicamos que está encerrado o lançamento de novas tarefas.<br/>
+Até as 20:30h o resultado final da gincana será divulgado no Ginásio de Esportes.</p>
+                    <p>TAREFAS ESPORTIVAS | </p>
+                    <p>CULTURAIS | </p>
                 </div>
             </div>
+
+
             <div class="socialSection clearfix">
                 <div class="head">
                     <div class="headLeft"></div>
@@ -108,31 +176,11 @@ A EQUIPE ESPARTA é formada por dez integrantes com ampla experiência em gincan
                 </div>
                 <div class="container">
                     <div class="half">
-                        <h3>últimas notícias</h3>
+                        <h3>Twitter Esparta</h3>
                         <br>
-                        <ul id="newsList">
-                            <li>
-                                <a href="#">
-                                    Equipe Exército Vermelho é a campeão 2013
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Equipe Exército Vermelho é a campeão 2013
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Equipe Exército Vermelho é a campeão 2013
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Equipe Exército Vermelho é a campeão 2013
-                                </a>
-                            </li>
-
-                        </ul>
+                        <br>
+                        <a class="twitter-timeline" href="https://twitter.com/equipeesparta" data-widget-id="579764387575128064">Tweets de @equipeesparta</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                     </div>
                     <div class="half right">
                         <h3>Facebook Esparta</h3>
@@ -142,6 +190,8 @@ A EQUIPE ESPARTA é formada por dez integrantes com ampla experiência em gincan
                     </div>
                 </div>
             </div>
+
+
             <div class="footer">
                 <div class="bottomLogoHolder">
                     <h4 id="footerLogo">Equipe Esparta - Organizador de Gincanas</h4>
@@ -171,9 +221,10 @@ A EQUIPE ESPARTA é formada por dez integrantes com ampla experiência em gincan
             </div>
         </div>
     </body>
-    
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
     <script src="assets/js/vendor/cheet.min.js"></script>
+    <script src="assets/js/vendor/owl-carousel/owl.carousel.min.js"></script>
     <script src="assets/js/main.js"></script>
 </html>
