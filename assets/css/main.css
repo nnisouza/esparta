@@ -1525,3 +1525,50 @@ h3.latestNewsTitle {
     text-transform: uppercase;
     text-align: center;
 }
+.arenArea {
+    border-top: 2px solid #e3e3e3;
+}
+.arenArea .conteudo{
+    float: left;
+    width: 900px;
+    height: 500px;
+    background: red;
+}
+.arenArea h3{
+    color: #4d4d4d;
+    font-family: Verdana;
+    font-size: 33px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 10px 0;
+}
+.orientacoes {
+    width: 300px;
+    height: auto;
+    float: right;
+    background:  url(../img/layout/icons/123.png);
+    padding: 10px;
+    box-sizing: border-box;
+}
+.orientacoes .innerO{
+    background: #fff;
+}
+.orientacoes .innerO h3{
+    color: #666;
+    font-family: Verdana;
+    font-size: 17px;
+    font-weight: 700;
+    border-left: 10px solid #f82;
+    text-transform: uppercase;
+    margin: 0 0 0 -10px;
+    padding: 10px;
+}
+.orientacoes .innerO p{
+    color: #666;
+    font-family: Verdana;
+    font-size: 11px;
+    font-weight: 400;
+    margin: 0;
+    padding: 10px;
+}
