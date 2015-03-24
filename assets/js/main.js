@@ -12,42 +12,44 @@ function actions() {
     });
     $('#taskTable li:odd').addClass('odd');
     $('#taskTable li').on('mousemove', function(e) {
-
-        var offset = $(this).offset(),
-            relativeX = (e.pageX) + 40,
-            relativeY = (e.pageY),
-            screen = relativeX + 360,
-            title = $(this).data('title'),
-            type = $(this).data('type'),
-            points = $(this).data('points'),
-            release = $(this).data('release'),
-            status = $(this).data('status');
-
-        if(status == 'active') {
-            $('#contenidoBlock').removeClass('inactive');
-            $('#contenidoBlock').addClass(status);
-        } else if(status == 'inactive') {
-            $('#contenidoBlock').removeClass('active');
-            $('#contenidoBlock').addClass(status);
-        }
-
-        if (screen > master.window.width){
-            relativeX = (e.pageX) - 390;
+        if($('#taskTable').hasClass('listagem')) {
+            return false;
         } else {
-            relativeX = (e.pageX) + 40;
+            var offset = $(this).offset(),
+                relativeX = (e.pageX) + 40,
+                relativeY = (e.pageY),
+                screen = relativeX + 360,
+                title = $(this).data('title'),
+                type = $(this).data('type'),
+                points = $(this).data('points'),
+                release = $(this).data('release'),
+                status = $(this).data('status');
+
+            if(status == 'active') {
+                $('#contenidoBlock').removeClass('inactive');
+                $('#contenidoBlock').addClass(status);
+            } else if(status == 'inactive') {
+                $('#contenidoBlock').removeClass('active');
+                $('#contenidoBlock').addClass(status);
+            }
+
+            if (screen > master.window.width){
+                relativeX = (e.pageX) - 390;
+            } else {
+                relativeX = (e.pageX) + 40;
+            }
+
+            $('#contenidoBlock').css({
+                'top': relativeY,
+                'left': relativeX
+            })
+            .fadeIn('fast');
+
+            $('#contenidoBlock #title').text(title);
+            $('#contenidoBlock #type').text(type);
+            $('#contenidoBlock #points').text(points);
+            $('#contenidoBlock #release').text(release);
         }
-
-        $('#contenidoBlock').css({
-            'top': relativeY,
-            'left': relativeX
-        })
-        .fadeIn('fast');
-
-        $('#contenidoBlock #title').text(title);
-        $('#contenidoBlock #type').text(type);
-        $('#contenidoBlock #points').text(points);
-        $('#contenidoBlock #release').text(release);
-
     });
     $('#taskTable').on('mouseleave', function(e) {
         $('#contenidoBlock').fadeOut('fast');

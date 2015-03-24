@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700);
+a{text-decoration: none;}
 html,
 button,
 input,
@@ -176,7 +177,7 @@ textarea {
 
     a,
     a:visited {
-        text-decoration: underline;
+        text-decoration: none;
     }
 
     a[href]:after {
@@ -799,13 +800,18 @@ ul#taskTable {
     padding: 0;
     list-style: none;
     width: 100%;
-    border: 1px solid #929292;
-    border-top: 0 none;
-    border-left: 0 none;
     position: relative;
 }
 ul#taskTable.listagem li{
     background: #fff;
+    height: 40px;
+    border: 0 none;
+}
+ul#taskTable.listagem li.odd{
+    background: #fff;
+}
+ul#taskTable.listagem li.inactive{
+    background: #e5e7e8;
 }
 ul#taskTable.listagem li:hover{
     background: #16ab78;
@@ -814,6 +820,9 @@ ul#taskTable.listagem li:hover a{
     color: #fff;
 }
 ul#taskTable li a{
+    text-decoration: none;
+}
+ul#taskTable li a span.number{
     font-size: 30px;
     font-weight: bold;
     color: #929292;
@@ -824,12 +833,39 @@ ul#taskTable li a{
     height: 100%;
     box-sizing: border-box;
 }
+ul#taskTable li a span.allInfo{
+    display: none;
+}
+ul#taskTable li a span.allInfo>span{
+    display: inline-block;
+    height: 40px;
+    font-size: 25px;
+    line-height: 40px;
+}
+ul#taskTable li a span.allInfo>span.tname{
+    text-transform: uppercase;
+    padding-left: 10px;
+    width: 750px;
+}
+ul#taskTable li a span.allInfo>span.ttipo{
+    width: 50px;
+}
+ul#taskTable li a span.allInfo>span.tpontuation{
+    width: 170px;
+}
+ul#taskTable.listagem li a span.allInfo{
+    display: block;
+}
+ul#taskTable.listagem li a span.number{
+    display: none;
+}
+ul#taskTable.listagem li a{
+    color: #000;
+}
 ul#taskTable li{
     width: 12.5%;
     height: 125px;
     border: 1px solid #929292;
-    border-bottom: 0 none;
-    border-right: 0 none;
     box-sizing: border-box;
     display: block;
     float: left;
@@ -1100,6 +1136,11 @@ h3.tarefaTitle {
     text-align: justify;
 }
 
+#filters{
+    float: left;
+    padding: 0;
+    margin: 0;
+}
 #filters .filter{
     list-style: none;
     float: left;
@@ -1129,6 +1170,7 @@ h3.tarefaTitle {
     font-family: Verdana;
     font-size: 11px;
     font-weight: 400;
+    padding-bottom: 10px;
 }
 
 .iconsAndButtons {
@@ -1164,4 +1206,322 @@ h3.tarefaTitle {
     background: #ccc;
     float: left;
     margin: 5px;
+}
+
+#count{
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#count li span{
+    display: block;
+    color: #808080;
+    font-family: Verdana;
+    font-size: 33px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 38px;
+}
+#count li{
+    color: #ccc;
+    font-family: Verdana;
+    font-size: 11px;
+    font-weight: 400;
+    float: left;
+    text-transform: uppercase;
+    padding: 0 5px;
+}
+
+#logoAndIcons {
+    float: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#logoAndIcons li{
+    float: left;
+    color: #ccc;
+    font-family: Verdana;
+    font-size: 11px;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 5px;
+}
+#logoAndIcons li span{
+    display: block;
+    min-width: 33px;
+    height: 35px;
+}
+#logoAndIcons li.ico01 span{background: url('../img/layout/icons/objeto-86.png') center center no-repeat;}
+#logoAndIcons li.ico02 span{background: url('../img/layout/icons/objeto-93.png') center center no-repeat;}
+
+.fightBanner {
+    background: #fffce6;
+    height: 132px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.fightBanner>img{
+    top: 8px;
+    position: absolute;
+    left: 35px;
+}
+.fightBanner .suchTime{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    height: 132px;
+    width: 150px;
+
+    color: #000;
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: 400;
+
+    display: table;
+}
+.fightBanner .suchTime .effect{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff7af;
+    height: 132px;
+    width: 173px;
+
+    z-index: 0;
+
+    -webkit-transform: skew(-38deg);
+    -moz-transform: skew(-38deg);
+    -ms-transform: skew(-38deg);
+    -o-transform: skew(-38deg);
+    transform: skew(-38deg);
+}
+.fightBanner .suchTime p{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+
+    color: #000;
+    font-family: Arial, Verdana;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    display: table-cell;
+    vertical-align: middle;
+}
+.fightBanner .suchTime p span{
+    color: #4d4d4d;
+    font-family: Verdana;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 43px;
+}
+
+.xHolder {
+    color: #000;
+    font-family: Verdana;
+    font-size: 39px;
+    font-weight: 400;
+    line-height: 132px;
+    float: left;
+    width: 40px;
+    margin: 0 10px;
+    height: 132px;
+    text-align: center;
+}
+
+.brasaoHolder {
+    width: 105px;
+    height: 132px;
+    float: left;
+    display: table;
+}
+.brasaoHolder .middle{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.brasaoHolder .middle img{
+    max-width: 100%;
+    height: auto;
+}
+
+.brasao {
+    height: 132px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.brasaName {
+    width: 80px;
+    height: 132px;
+    color: #000;
+    font-family: Arial, Verdana;
+    font-size: 11px;
+    font-weight: 400;
+    text-align: right;
+    float: left;
+    padding-right: 20px;
+    text-transform: uppercase;
+    display: table;
+}
+
+.brasaName.right {
+    text-align: left;
+    padding-right: 0;
+    padding-left: 20px;
+}
+.brasaName>div{
+    display: table-cell;
+    vertical-align: middle;
+}
+.theHeader span{
+    display: inline-block;
+    color: #aeb0b2;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.theHeader span.tname{
+    width: 750px;
+    padding-left: 10px;
+}
+.theHeader span.ttipo{
+    width: 50px;
+}
+.theHeader span.tpontuation{
+    width: 170px;
+}
+
+.aviso {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background: #fffce7;
+    margin-bottom: 20px;
+    border: 1px dotted #c7c8c3;
+    padding-right: 140px;
+    position: relative;
+    box-sizing: border-box;
+}
+.aviso h2{
+    font-size: 38px;
+    font-family: Verdana;
+    text-transform: uppercase;
+    margin: 0;
+    color: #606163;
+}
+.aviso>span{
+    font-size: 20px;
+    font-family: Verdana;
+    color: #606163;
+}
+.aviso p{
+    font-family: Verdana;
+    color: #606163;
+    font-size: 24px;
+}
+
+.iconThere {
+    background: url(../img/layout/icons/slice.png) no-repeat;
+    width: 103px;
+    height: 170px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.iconThere span{
+    padding-top: 136px;
+    font-size: 38px;
+    text-align: center;
+    font-weight: 700;
+    display: block;
+    line-height: 35px;
+    font-family: Verdana;
+}
+
+.underIageHome {
+    color: #000;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 24px;
+}
+#clock{
+    color: #010000;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+#clock span{
+    display: inline-block;
+    width: 59px;
+    height: 59px;
+    background-color: #ffd336;
+    color: #fff;
+    text-align: center;
+    line-height: 59px;
+    font-weight: 700;
+    font-size: 30px;
+    border-radius: 50%;
+    margin-left: 25px;
+}
+
+#clock span.theFirst{margin: 0;}
+.latestnews {
+    border-top: 6px solid #f7d600;
+}
+.latestnews ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.latestnews ul li{
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 10px 0;
+}
+.latestnews ul li .aSimpleHolder{
+    display: table;
+    float: left;
+    width: 500px;
+    padding-left: 15px;
+    min-height: 75px;
+}
+.latestnews ul li>.laDate{
+    display: block;
+    width: 65px;
+    height: 74px;
+
+    color: #000;
+    font-size: 63px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+    float: left;
+    padding-top: 10px;
+}
+.latestnews ul li>.laDate>span{
+    color: #000;
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 21.99999px;
+    text-transform: uppercase;
+}
+.latestnews ul li .elTexto{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+h3.latestNewsTitle {
+    color: #000;
+    font-size: 27px;
+    font-weight: bold;
+    line-height: 21.99999px;
+    text-transform: uppercase;
+    text-align: center;
 }
