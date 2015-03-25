@@ -1532,7 +1532,6 @@ h3.latestNewsTitle {
     float: left;
     width: 900px;
     height: 500px;
-    background: red;
 }
 .arenArea h3{
     color: #4d4d4d;
@@ -1571,4 +1570,200 @@ h3.latestNewsTitle {
     font-weight: 400;
     margin: 0;
     padding: 10px;
+}
+
+.equipo {
+    width: 550px;
+    margin: 0 auto;
+}
+.equipo>p{
+    color: #999;
+    font-family: Verdana;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.equipo ul{
+    margin: 0 0 20px;
+    padding: 0;
+    background: #f8f8f8;
+    list-style: none;
+}
+.equipo ul li{
+    width: 183px;
+    height: 200px;
+    float: left;
+    position: relative;
+    display: table;
+    cursor: pointer;
+}
+.equipo ul li:hover{
+    opacity: 0.7;
+}
+.equipo ul li>div{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.equipo ul li>div img{
+    width: 80%;
+}
+.equipo ul li.selected{
+    background: #e5e7e8;
+}
+.equipo ul li.selected:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 16px solid #009e59;
+    border-left: 10px solid #009e59;
+    border-right: 10px solid transparent;
+    border-bottom: 16px solid transparent;
+}
+.equipo form label{
+    float: left;
+    color: #666;
+    font-family: Verdana;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-right: 18px;
+}
+.equipo form input{
+    float: left;
+    border: 0 none;
+    background: url('../img/layout/icons/ssa.png') no-repeat;
+    width: 214px;
+    height: 30px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-right: 18px;
+}
+.equipo form button{
+    border: 0 none;
+    width: 95px;
+    height: 30px;
+    background: url('../img/layout/icons/dds.png') no-repeat;
+    display: block;
+    float: left;
+}
+
+.fighting{
+    margin-bottom: 50px;
+}
+.fighting .rivals{
+    width: 120px;
+    text-align: center;
+    float: left;
+}
+.fighting .rivals p{
+    color: #000;
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.fighting .rivals img{
+    max-width: 90%;
+    margin: 20px 0;
+}
+.fighting .rivals .bigX{
+    color: #000;
+    font-family: Verdana;
+    font-size: 39px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.fighting .timing{
+    float: left;
+    height: 470px;
+    display: table;
+    width: 180px;
+    text-align: center;
+}
+.fighting .timing>div{
+    display: table-cell;
+    vertical-align: middle;
+
+    color: #000;
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.fighting .timing>div>span{
+    color: #4d4d4d;
+    font-family: Verdana;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 45px;
+}
+.fighting .giantSeparator{
+    width: 1px;
+    height: 470px;
+    background: #bfbbbb;
+    float: left;
+    margin-right: 20px;
+}
+.fighting .descriptionOrSomething{
+    float: left;
+    width: 355px;
+    height: 470px;
+    text-align: center;
+}
+.fighting .descriptionOrSomething p{
+    color: #666;
+    font-family: Verdana;
+    text-transform: uppercase;
+
+    font-size: 17px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+.fighting .descriptionOrSomething p span{
+    font-size: 11px;
+    font-weight: 400;
+}
+.fighting .descriptionOrSomething p span span{
+    font-weight: 700;
+}
+.fighting form{
+    float: left;
+    height: 470px;
+    width: 215px;
+    display: table;
+    text-align: center;
+}
+.fighting form div{
+    display: table-cell;
+    vertical-align: middle;
+}
+.fighting form div label{
+    color: #1a1a1a;
+    font-family: Verdana;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 25px;
+}
+.fighting form div button{
+    display: block;
+    border: 0 none;
+    display: block;
+    margin: 8px auto;
+    background: url('../img/layout/icons/2-layers.png');
+    width: 155px;
+    height: 27px;
+}
+.fighting form div input{
+    background: url('../img/layout/icons/campo.png');
+    width: 156px;
+    height: 28px;
+    border: 0 none;
+    padding: 0 10px;
+    box-sizing: border-box;
 }

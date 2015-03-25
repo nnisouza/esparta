@@ -55,6 +55,11 @@ function actions() {
         $('#contenidoBlock').fadeOut('fast');
     });
 
+    $('.equipo ul li').click(function() {
+        $('.equipo ul li').removeClass('selected');
+        $(this).addClass('selected');
+    });
+
     $("#owl-demo").owlCarousel({
 
         navigation : false, // Show next and prev buttons
